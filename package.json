@@ -1,0 +1,32 @@
+{
+  "name": "viewport-position",
+  "version": "0.1.0",
+  "description": "Get the current viewport position of target window",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "test": "./node_modules/.bin/standard && ./node_modules/.bin/browserify test.js | ./node_modules/.bin/testling | ./node_modules/.bin/coverify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kyungw00k/viewport-position.git"
+  },
+  "keywords": [
+    "viewport",
+    "position",
+    "dom"
+  ],
+  "author": "Kyungwook Park",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kyungw00k/viewport-position/issues"
+  },
+  "homepage": "https://github.com/kyungw00k/viewport-position#readme",
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "coverify": "^1.4.1",
+    "standard": "^7.1.2",
+    "tape": "^4.6.0",
+    "testling": "^1.7.1"
+  }
+}
