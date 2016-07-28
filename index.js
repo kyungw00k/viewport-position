@@ -1,22 +1,18 @@
 function viewportPosition (win) {
   win = win || window
   var doc = win.document
+  var docElem = doc.documentElement || doc.body.parentNode || doc.body
 
-  var w = (win.innerWidth !== undefined)
-    ? win.innerWidth
-    : (doc.documentElement.clientWidth || 0)
-
-  var h = (win.innerHeight !== undefined)
-    ? win.innerHeight
-    : (doc.documentElement.clientHeight || 0)
+  var w = docElem.clientWidth
+  var h = docElem.clientHeight
 
   var l = (win.pageXOffset !== undefined)
     ? win.pageXOffset
-    : (doc.documentElement || doc.body.parentNode || doc.body).scrollLeft
+    : docElem.scrollLeft
 
   var t = (win.pageYOffset !== undefined)
     ? win.pageYOffset
-    : (doc.documentElement || doc.body.parentNode || doc.body).scrollTop
+    : docElem.scrollTop
 
   return {
     top: t,
