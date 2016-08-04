@@ -1,0 +1,20 @@
+ui: mocha-bdd
+browsers:
+  - name: ie
+    version: 6..7
+    platform: Windows 2003
+  - name: ie
+    version: 8..latest
+  - name: chrome
+    version: latest
+    platform: Windows 10
+  - name: safari
+    version: latest
+    platform: Windows 2008
+  - name: firefox
+    version: latest
+    platform: Windows 2008
+  - name: iphone
+    version: 8.1..latest
+  - name: android
+    version: 4.0..latest

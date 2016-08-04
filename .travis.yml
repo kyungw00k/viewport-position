@@ -2,13 +2,16 @@ sudo: required
 dist: trusty
 language: node_js
 node_js:
- - "5.0"
-
+- '5.0'
 before_install:
- - export CHROME_BIN=/usr/bin/google-chrome
- - export DISPLAY=:99.0
- - sh -e /etc/init.d/xvfb start
- - sudo apt-get update
- - sudo apt-get install -y libappindicator1 fonts-liberation
- - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
- - sudo dpkg -i google-chrome*.deb
+- export CHROME_BIN=/usr/bin/google-chrome
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
+- sudo apt-get update
+- sudo apt-get install -y libappindicator1 fonts-liberation
+- wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+- sudo dpkg -i google-chrome*.deb
+env:
+  global:
+  - secure: nd1jxZ5M9LW4xWx5jipej5vcuC2B6y7Db3xtdWXrOWEIEPzkIcFfVm/pCGAll5TKHA4uB2o0viPUiaeZ5bz9L1DHHocXUw/lAVLSCvcUjK9p/Ewe0hSTPm4lzVR2E05JMzhkyLcu4AW1w3/Ou7PSVemzF5jeB3C4BBsR6WKHWCXG8vftsKjKTdmbVmX4PCog7VZlLdbXBcbyZ0mtzgDBevTMtlGGNGr/RD9N/0AjzHAf0R6ryiHkUIKiaC2BY0cVt/AnSLoopDQJ+AWIWS1SyRj/GsSedTfsabHdeqVKi/1Wo7J/CWrQbXf867Q9Hfhp8UuHFRX/o2mJ3AR59Uw0zI+EEHsuGQz7CuLHRGtSo1jIdaH1MXDZpEGA0hYgIK/u/co5V1r8ognfK3c/8NoRWqKuDOGTkcOs7PG7kxEVsEJWgTwg860NJveKpj1bi2LkuRMErLaYVWHWVZLSDWwVR7xlJy59kRti/mlP2CjVCpQqg1GZMtC8OjPOMuKXOJpMOqTPuq6mEfLq+7UZOCDpvSrs1EgqMPhqC7OQZccRsQM+Nq6FadHtHQvx7KJqFtxho5MYWsS3Ym2JOtITTNyxHvenhwK4TOMKcxEH78wFYSPZPkMMQtAb2vI8JfyGQH9UOP61DE1UNxWuXrplzV3DF0aYXZ6/XHWdaSyge5l5u/I=
+  - secure: AZsmMphYk/6sDGpAR8rBGfvLokEqA69QcdxT6+a2n1Q7VdmNP40VzciOM8tQ8cDI863dgDv8yBW9cg6xgad/R/bh3fQyZJ6S6XlEyKPdx7+D96G2V4Ar19ryHMoc/XeoAKid+b0QYa4bUOLx1mTj3xJNrHM4QxCE7hOjDuMNJ2KQb5UhNAm1sZgmEEgq4ngmaXIpiDAhyvvCEe1/oMj+Pm/yE+PWbqamCHvjkR4okYIF0FtDIdmHORU07Sho4uE82iDPW8E23gCuH3BcU/N7TP1fbJskJ+fqOgLnlCdlATmDymYIxPdknzxSVnsZh081cBrdg5TbJUODhEtK0lbCM/9ZU2CLaTY/AaESQiMS0ZSW9hh8QSFIyh3aj8sNFPGhJSglSZbT09oTqCTsG5P6wTQHECVKz7l37eJWdKqj0CKkT9Sdt6QzTD6ePhtWSxFZ18/Gee86IywZk/9SbkKwSKrBa7vkWfzQJycI2knRmHoBGWaTB2mVnLhKRkrFiqcTvNpC30M6FCqgGz+H/vZICx87nEtNbU/eyr7HETYytvqzwhYgEghXOalVhubTUEYwx1jI4ElG3kAhyM0+JQhSvzl4qsK6NVhwIc59yqqGgd7vSOinS9fIxieY4n5+RVBD7eiJ22sSSzXSneoV5VQhDQ7weoj5cIn6vmzaMHT+uJ0=
