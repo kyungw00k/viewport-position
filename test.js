@@ -1,4 +1,4 @@
-/* global describe, beforeEach, afterEach, it */
+/* global describe, before, it */
 
 'use strict'
 
@@ -23,7 +23,9 @@ describe('viewport position', function () {
     var windowWidth = doc.documentElement.clientWidth || doc.body.clientWidth
     var windowHeight = doc.documentElement.clientHeight || doc.body.clientHeight
 
-    setTimeout(function () {window.scrollTo(scrollLeft, scrollTop)}, 1)
+    setTimeout(function () {
+      window.scrollTo(scrollLeft, scrollTop)
+    }, 1)
 
     setTimeout(function () {
       var pos = viewportPosition()
@@ -43,7 +45,9 @@ describe('viewport position', function () {
     var windowWidth = doc.documentElement.clientWidth || doc.body.clientWidth
     var windowHeight = doc.documentElement.clientHeight || doc.body.clientHeight
 
-    setTimeout(function () {window.scrollTo(scrollLeft, scrollTop)}, 1)
+    setTimeout(function () {
+      window.scrollTo(scrollLeft, scrollTop)
+    }, 1)
 
     setTimeout(function () {
       var pos = viewportPosition()
