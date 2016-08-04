@@ -3,14 +3,6 @@ dist: trusty
 language: node_js
 node_js:
 - '5.0'
-before_install:
-- export CHROME_BIN=/usr/bin/google-chrome
-- export DISPLAY=:99.0
-- sh -e /etc/init.d/xvfb start
-- sudo apt-get update
-- sudo apt-get install -y libappindicator1 fonts-liberation
-- wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-- sudo dpkg -i google-chrome*.deb
 env:
   global:
   - secure: nd1jxZ5M9LW4xWx5jipej5vcuC2B6y7Db3xtdWXrOWEIEPzkIcFfVm/pCGAll5TKHA4uB2o0viPUiaeZ5bz9L1DHHocXUw/lAVLSCvcUjK9p/Ewe0hSTPm4lzVR2E05JMzhkyLcu4AW1w3/Ou7PSVemzF5jeB3C4BBsR6WKHWCXG8vftsKjKTdmbVmX4PCog7VZlLdbXBcbyZ0mtzgDBevTMtlGGNGr/RD9N/0AjzHAf0R6ryiHkUIKiaC2BY0cVt/AnSLoopDQJ+AWIWS1SyRj/GsSedTfsabHdeqVKi/1Wo7J/CWrQbXf867Q9Hfhp8UuHFRX/o2mJ3AR59Uw0zI+EEHsuGQz7CuLHRGtSo1jIdaH1MXDZpEGA0hYgIK/u/co5V1r8ognfK3c/8NoRWqKuDOGTkcOs7PG7kxEVsEJWgTwg860NJveKpj1bi2LkuRMErLaYVWHWVZLSDWwVR7xlJy59kRti/mlP2CjVCpQqg1GZMtC8OjPOMuKXOJpMOqTPuq6mEfLq+7UZOCDpvSrs1EgqMPhqC7OQZccRsQM+Nq6FadHtHQvx7KJqFtxho5MYWsS3Ym2JOtITTNyxHvenhwK4TOMKcxEH78wFYSPZPkMMQtAb2vI8JfyGQH9UOP61DE1UNxWuXrplzV3DF0aYXZ6/XHWdaSyge5l5u/I=

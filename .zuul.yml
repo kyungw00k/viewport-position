@@ -1,4 +1,9 @@
 ui: mocha-bdd
+concurrency: 2
+tunnel:
+  type: ngrok
+  authtoken: 3xHC2jHvjwefzUV3UmtNt_2oFBA1dmECwX317WUq8z6
+  proto: tcp
 browsers:
   - name: ie
     version: 6..7
