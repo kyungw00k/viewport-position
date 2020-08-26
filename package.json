@@ -24,7 +24,7 @@
   "homepage": "https://github.com/kyungw00k/viewport-position#readme",
   "devDependencies": {
     "browserify": "^16.2.2",
-    "mocha": "^2.5.3",
+    "mocha": "^8.1.2",
     "standard": "^11.0.1",
     "zuul": "^3.10.3",
     "zuul-ngrok": "^4.0.0"
